@@ -1,5 +1,21 @@
+JSBIN: https://jsbin.com/xeqimix/edit?js,console
+
 Javascript es un Lenguaje lexicográfico: Depende de como escribimos, es como interpreta el código. Si escribimos algo con comillas, lo interpreta como un strinng, si usamos corchetes separndo por comas el contenido, lo va a interpretar como un array.
 
 VAR en desuso, porque declara variables globales, y lo que se trata es que las variables sean lo mas localizadas posibles. Por eso se usa let (Tiene vigencia solo dentro del bloque en el que está definido)
 
 La caracteristica basica de un lenguaje funcional, es que se pueden manipular las funciones como si fuesen datos, poder asignarlos a variables.
+
+REDUCE --> Reducir un array a un solo valor
+
+Una funcion reductora lo unico que busca, dado un criterio, es devolver un solo valor (quizas conjunto de valores) de un array dado.
+
+Server s = new Server();
+
+Tipo variable = operador Constructor();
+
+El constructor es un metodo ESTATICO, porque cuando se lo invoca va a la CLASE, no al objeto (Que todavía no está instanciado)
+
+El mecanismo de CLOSURE es un mecanismo moderno, JS no es el unico lenguaje que lo impmlementa. Podemos dividir la parte publica del objeto y la implementacion interna (funciones, datos)ii
+
+
