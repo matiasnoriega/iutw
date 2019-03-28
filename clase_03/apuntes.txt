@@ -92,3 +92,41 @@ el objeto que instanciamos conoce a la variable X y a la funcion, o sea, guarda 
 
 Un lenguaje funcional, descompone el sistema en funciones.
 - Poder pasar la funcion como dato, y ademas, poder decirle que se ejecute (Es lo que la diferencia de un dato cualquiera).
+
+						
+					   _____ f(a, b,...,n)
+					  |
+					  V
+			 ____g(a, R)
+			|
+			V
+ h(a, b, c, R)
+
+
+Se requiere que:
+	- las funciones sean PURAS, quiere decir que ante los mismos valores devuelva SIEMPRE los mismos resultados;
+	- depende estrictamente y unicamente de los argumentos recibidos.
+	- las funciones retornen SÍ O SÍ un valor;
+
+
+PATRON OBSERVER - LISTENER:
+
+Se modeliza una situacion de eventos. Cuando hay un evento, es porque hay alguien que en el patron se situa como un "Sujeto" que avisa de que hubo un evento (click, drag, mouseover).
+
+Los dos momentos importantes en este patron:
+- 1er Momento: ESTOY INTERESADO EN LO QUE LE PASE AL BOTON (Antes de que el boton sea visible)
+- 2do Momento: EN EL MOMENTO QUE EL USUARIO CLICKEA EL BOTON, SE EJECUTE LO QUE TENGA QUE EJECUTARSE
+
+Una de las responsabilidades del SUJETO es comunicarle a los INTERESADOS que ocurrio un evento(Dependiendo del evento, dependerá que a que interesados le avisa [Pueden ser varios, la IMPLEMENTACION sería un array]);
+
+Responsabilidades del SUJETO:
+- Registrar OBSERVADORES
+- Avisar eficientemente que haya sucedido aquella cosa en la que los observadores hayan manifestado interes.
+
+El orden en el que se fueron registrando los observadores IMPORTA; el orden en el que fueron suscriptos, es el orden en el que van a ser invocados.
+
+
+Responsabilidades del OBSERVADOR:
+- 1er Momento: Suscribirse al SUJETO
+- 2do Momento: Tomar accion cuando es avisado. 
+
