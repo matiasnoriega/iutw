@@ -1,0 +1,2 @@
+JS no tiene clases.
+A raiz de no tener clases, no tiene herencias.
