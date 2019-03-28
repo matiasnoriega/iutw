@@ -1,2 +1,94 @@
+JavaScript != ES6
+
 JS no tiene clases.
 A raiz de no tener clases, no tiene herencias.
+
+Guerrero r = new Barbaro() ---> Polimorfismo.
+
+		 Guerrero
+         --------
+			|
+			|
+			|
+	---------------------
+	|					|
+ Barbaro			 Arquero
+
+
+					Nom|Datos
+int a = 5;-------->	a  | 5
+int b = 7;-------->	b  | 7
+
+a = b;			
+
+					Nom|Datos
+int a = 5;--____-->	a  | 5
+int b = 7;---**--->	b  | 7
+
+
+Toda asignacion es "esto apunta allá, ahora apunta acá".
+
+Arquero a = new Arquero();
+
+r = a;	OK : Porque a hereda de r, es una clase hija
+a = r;	ERROR : Lo contrario al caso anterior, todos los arqueros son guerreros, pero no todos los guerreros son arqueros.
+
+El METODO es como la clase resuelve el mensaje que le enviamos. Por ejemplo, el mensaje "atacar" al objeto Guerrero, hace que dependiendo de la implementación del mismo (Si es arquero o guerrero), resuelva de una manera u otra ese mensaje.
+
+La lista de los mensajes que el objeto puede contestar es la INTERFAZ. Es el compromiso ó RESPONSABILIDAD que asume una clase, y las sub-clases. En el ejemplo de la clase Guerrero, la misma se compromete a:
+
+Guerrero
+- atacar()
+- defenderse()
+- contraatacar()
+
+Y las clases heredades, también asumen las mismas responsabilidades, asumiendo las responsabilidades de la clase padre.
+
+Barbaro
+- atacar()
+- defenderse()
+- contraatacar()
+- tomar_cerveza()
+
+Arquero
+- atacar()
+- defenderse()
+- contraatacar()
+- pagar_cerveza()
+
+Tipo --> nombre propio que se le da a la interfaz (lista de responsabilidades de una clase);
+
+r (En tanto Guerrero) ----------------> B(); 
+a (En tanto Arquero)  ----------------> A();
+
+No se puede asignar a = r ya que r al ser Guerrero tiene menos responsabilidades que la clase Arquero, y no se pueden quitar las responsabilidades.
+
+[*] Los tipos sirven para que los compiladores hagan una optimización a la hora de compilar.
+
+
+
+El encapsulamiento en JS se implementa como CLOSURE
+##Constructor
+var alumnoFactory(){
+	
+	let obj = {
+	.
+	function funcion(){
+
+	}
+	.
+	.
+	var x = ...;
+	}
+
+	return obj;
+}
+
+Las funciones y variables que se utilizan para instanciar el objeto no son accesibles desde el exterior, una vez retornado el objeto, no hay manera de acceder a aquellas.
+
+el objeto que instanciamos conoce a la variable X y a la funcion, o sea, guarda las referencias a los mismos, a la sque nadie mas accede (nadie mas tiene referencia) [CLOSURE]. Por eso mismo el GarbageCollector no recolecta las mismas (funcion y variable); en el caso de que se elimine el objeto instanciado, el GarbageCollector entiende que nadie esta referenciando a funcion y var X.
+
+[**] CLOSURE ---> APLICACION DEL CRITERIO DE OBJETOS A RAJATABLA
+
+Un lenguaje funcional, descompone el sistema en funciones.
+- Poder pasar la funcion como dato, y ademas, poder decirle que se ejecute (Es lo que la diferencia de un dato cualquiera).
