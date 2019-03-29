@@ -1,3 +1,5 @@
+JSBIN DE LA CLASE: https://jsbin.com/xucelip/edit?js,console
+
 JavaScript != ES6
 
 JS no tiene clases.
@@ -111,7 +113,7 @@ Se requiere que:
 
 PATRON OBSERVER - LISTENER:
 
-Se modeliza una situacion de eventos. Cuando hay un evento, es porque hay alguien que en el patron se situa como un "Sujeto" que avisa de que hubo un evento (click, drag, mouseover).
+Se modeliza una situacion de eventos. Cuando hay un evento, es porque hay alguien que en el patron se situa como un "Sujeto" que avisa de que hubo un evento (click, drag, momentosouseover).
 
 Los dos momentos importantes en este patron:
 - 1er Momento: ESTOY INTERESADO EN LO QUE LE PASE AL BOTON (Antes de que el boton sea visible)
@@ -130,3 +132,13 @@ Responsabilidades del OBSERVADOR:
 - 1er Momento: Suscribirse al SUJETO
 - 2do Momento: Tomar accion cuando es avisado. 
 
+	
+
+REPL --> Es el comportamiento esperado de todo lo que se diga una consola.
+Read
+Evaluate
+Print
+Loop
+
+
+RETURN --> suspension incondicional de la funcion que se estaba ejectuando y el retorno si es que existe del valor;
