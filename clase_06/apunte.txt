@@ -1,0 +1,10 @@
+JSbin: https://jsbin.com/zagegow/edit?js,console
+
+Cuando se le pasan 2 argumentos a una funcion que tiene 3 argumentos en la firma, este queda como undefined. Y si la funcion acepta que sea undefined no pincha.
+
+De manera contraria si se le pasan 4 argumentos, llama la funcion de todas maneras, sin embargo no arroja ningun tipo de error (directamente no usa el 4to argumento).
+
+Las transiciones de estado que admite una promesa son:
+
+1. PENDIENTE -> RESUELTA
+2. PENDIENTE -> REJECT
