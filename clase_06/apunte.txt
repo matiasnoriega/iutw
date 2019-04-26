@@ -8,3 +8,12 @@ Las transiciones de estado que admite una promesa son:
 
 1. PENDIENTE -> RESUELTA
 2. PENDIENTE -> REJECT
+
+SOAP -> XML
+restFull -> JSON
+
+NAVEGADOR --> Ejecuta la aplicación WEB
+
+JSBIN para Angular: https://stackblitz.com
+
+LEER DOCUMENTACION ANGULAR Y LO QUE ESTÁ EN MASUNO
