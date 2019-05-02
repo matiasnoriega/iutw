@@ -1,14 +1,47 @@
 Tim Bernards Lee concibe al navegador como un contenido que debe renderizar, que llegaba en HTML.
 [OBJETOS DIGITALES] ==> [RECURSOS DIGITALES]
 
+TBL logro disponibilizar un monton de objetos digitales, convirtiendolos en RECURSOS. Algo encontrable en una URL (Uniform Resource Location); una aplicación/software ES un recurso digital. Disponiendolo en una URL esta disponible para TODO el planeta en TODO momento, resolviendo el problema de la logística.
+
 La diferencia principal entre el navegador 3.x y la concepcion de TBL, es que en el último el navegador renderizaba un 90% de HTML y un 10% de JS+CSS.
 
-CONTENIDO ------> APLICACION
-_________         __________
-    |                |
-HTML(90%)JS(10%)   JS(90%)HTML(10%)     
+(recursos dig)
+CONTENIDO ----------> APLICACION
+_________             __________
+    |                     |
+HTML(90%)JS(10%)     JS(90%)HTML(10%)     
 
 ECMA significa European Computer Manufacturer's Association 
 
 Hoy por hoy no interesa tanto su funcion como renderizador de HTML, sino su condicion para ejecutar aplicacoines. El navegador como compilador de JS, donde el HTML pasa a ser una cosa totalmente secundaria. Es la aplicación una vez construida en el navegador, la que iba a construir la interfaz determinada para cada momento en la navegacion.
-En este cambio es importante el concepto de entorno de ejecucion de aplicaciones, como la JVM (Java Virtual Machine), Docker, VirtualBox. Este movimiento de "virtualizacion" fue necesario para la nube, pero 
+En este cambio es importante el concepto de entorno de ejecucion de aplicaciones, como la JVM (Java Virtual Machine), Docker, VirtualBox. Este movimiento de "virtualizacion" fue necesario para la nube, y el navegador cubría esta necesidad ya que era una pieza de software que está presente en el 99.9% de las computadoras del mundo y es capaz de renderizar el arbol DOM cruzado con el arbol de los CSS; como si fuera poco, viene acompañado de un sin fín de herramientas para desarrolladores
+
+SAAS: Software as a Service (Gmail) ----> Una aplicacion disponible donde sos un usuario.
+PAAS: Platform as a Service (Google) ---> Una plataforma donde pones tu aplicación y listo
+IAAS: Infrastructure as a Service (Amazon) ---> Toma un servidor y hace lo que quieras
+
+El navegador es un BUEN ENTORNO DE EJECUCION DE APLICACIONES por la disponibilidad (presente en casi todas las computadoras), por su capacidad de renderizar el arbol DOM, compilar JS, renderizar el arbol CSS también.
+
+---------------------
+
+APLICACIONES WEB
+
+Al poner la URL lo que devuelve el WS es una APLICACIÓN. Cada vez que ponemos la URL lo que estamos haciendo de alguna manera, es pedir el "instalador" de la aplicacion WEB. El WS nos devuelve un archivo index básico (y otros archivos estáticos: html, js, etc.), que contiene el script que se va a ejecutar en el navegador.
+
+Lo importante es que no necesariamente lo que vuelve del WS es HTML. Bajo este esquema, lo mas probable es que no venga nada de HTML, sino que vengan DATOS. En terminos de JS devolvería un array de objetos (JSON), y la aplicacion (del lado del cliente) va a renderizar el arból DOM con los datos que devolvieron.
+
+La ventaja de JSON por sobre XML, es que dada la notación del primero, aparte de ser mas económica, el compilador de JS en el navegador convierte el JSON automaticamente en un OBJETOS.
+
+1° Restful ---> JSON
+2° SOAP ---> XML
+
+El QUERY en el mundo RESTFUL, se resuelve con la URL:
+
+Supongamos que la URL es "gmail.com/inbox/fecha1/fecha2"
+
+Lo que se está pidiendo en esta query es "devolveme los mails entre la fecha1 y la fecha2".
+
+Como la URL se puede separar en tantas partes sean necesarias, se forma el query de lo que necesitemos. A eso se le agrega la posibilidad de hacer la solicitud con la URL via POST, GET, PUT o DELETE.
+
+En el caso de POST, aparte de la información que viaja en la URL también se puede enviar un JSON con información necesaria para traer los recursos especificados (Por ejemplo los campos del WHERE en una consulta SQL).
+
