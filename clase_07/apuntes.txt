@@ -1,0 +1,14 @@
+Tim Bernards Lee concibe al navegador como un contenido que debe renderizar, que llegaba en HTML.
+[OBJETOS DIGITALES] ==> [RECURSOS DIGITALES]
+
+La diferencia principal entre el navegador 3.x y la concepcion de TBL, es que en el último el navegador renderizaba un 90% de HTML y un 10% de JS+CSS.
+
+CONTENIDO ------> APLICACION
+_________         __________
+    |                |
+HTML(90%)JS(10%)   JS(90%)HTML(10%)     
+
+ECMA significa European Computer Manufacturer's Association 
+
+Hoy por hoy no interesa tanto su funcion como renderizador de HTML, sino su condicion para ejecutar aplicacoines. El navegador como compilador de JS, donde el HTML pasa a ser una cosa totalmente secundaria. Es la aplicación una vez construida en el navegador, la que iba a construir la interfaz determinada para cada momento en la navegacion.
+En este cambio es importante el concepto de entorno de ejecucion de aplicaciones, como la JVM (Java Virtual Machine), Docker, VirtualBox. Este movimiento de "virtualizacion" fue necesario para la nube, pero 
