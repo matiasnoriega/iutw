@@ -45,3 +45,20 @@ Como la URL se puede separar en tantas partes sean necesarias, se forma el query
 
 En el caso de POST, aparte de la información que viaja en la URL también se puede enviar un JSON con información necesaria para traer los recursos especificados (Por ejemplo los campos del WHERE en una consulta SQL).
 
+PHP --> SYMFONY/LARAVEL/ZEND
+PYTHON --> DJANGO/FLASK
+JAVA --> TOMCAT/JBOSS
+JS --> NODE.JS
+
+NPM --> Node Package Manager. Viene instalado con NODE.js, y termino siendo una herramienta muy util para la gestion de dependencias (como apt-get).
+
+"npm -g install nombre_del_paquete" la -g es para decirle al npm que queremos instalar de manera GLOBAL.
+
+devDependencies: Dependencias solo para desarrollo, cuando se entrega el producto no hace falta instlarlas, ya que son solo para ambientes de testeo/desarrollo, herramientas con esas finalidades.
+
+Un componente se conforma o encapsula:
+    - TypeScript: El lenguaje en el que está programado (Controller sobre el que actua sobre el HTML y CSS)
+    - HTML: Templates
+    - CSS: Estilos
+
+@---> Se usa en la declaracion de componentes para declarar una ANOTACIÓN (Del tipo ANNOTATIONS EN SYMFONY)
