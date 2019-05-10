@@ -2,3 +2,26 @@
 Command
 Line
 Interface
+
+RxJS: Librería de Observables (Programacion reactiva)
+
+Lo que se tiene que lograr es que todas las variables, que en definitiva componen el estado de la aplicación en determinado momento, estén en un único lugar. Y que esas variables, únicas fuentes de información, tomen una vista determinada. En un momento', todas las vistas asociadas a ese estado de la aplicación, si alguna de esas variables se actualiza, se llegue a un nuevo momento''. Esto se le llaman REDUCTORES(eventos), que son funciones PURAS(Que para determinado argumento devuelven siempre el mismo valor)
+
+Todas las herramientas (Angular, React, Vue) lo que hacen (detras de escena) construyen un sub-arbol DOM y lo construyen en forma muy eficiente. Y en determinado momento "conectan" este sub-arbol al arbol DOM. 
+
+Modulo: Conjunto discrecional de componentes y Directivas.
+
+Solo los que tengan la notación "@NgModule" son modulos propiamente dichos para Angular. La annotacion para TypeScript es una funcion, que tiene un objeto como argumento.
+
+COMPONENT
+Ladrillo fundamental de Angular. El component provee la logica y gestiona el modelo de datos que la visa requiere, es el CONTROLADOR de la vista. El template especifica el modo en el que debe ser renderizada. 
+La terna HTML/template, CSS/archivo de estilos y component(en minusculas[es una clase de typescript])Modulo-Controlador es lo que se refiere a COMPONENT.
+
+Si un componente no tiene un TEMPLATE, se le llama DIRECTIVA. Se usan para influenciar sobre los TEMPLATES de algún otro componente.
+
+Directive ---(superclase)---> Component
+
+STORE <---> PARENT --(input() [propiedades/properties/variables])--> CHILD
+STORE <---> PARENT <--(output() [eventos/events])-- CHILD
+
+Los datos guardados en el STORE, son accesibles por cualquier componente que se suscriba al mismo. el STORE entonces así se presenta como un SERVICIO. Estos aparecen en el CONSTRUCTOR.
