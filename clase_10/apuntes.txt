@@ -1,0 +1,31 @@
+Las suscripciones se tienen que registrar antes de que se renderice lo que está en pantalla. Para qu eno se de el caso en el que el usuario usa, por ejemplo, un boton y no pasa nada, y mas tarde haciendo nuevamente click, funcione.
+
+El que realiza el CALLBACK es el DOM ELEMENT.
+
+Un application server, si arranca con una configuracion, no se puede cambiar al vuelo. Se tiene que recompilar para que acepte los nuevos cambios. En cambio en PHP no hay nada pre compilado, se interpreta al vuelo cada vez que se hace una peticion.
+
+1) REQUEST --> Lo que envia el usuario
+2) RESPONSE --> El objeto en el que php tiene que incluir toda su respuesta (magia)
+
+El REQUEST es un objeto informático, en el que viajan los cookies.
+
+Las branches son TAGS. Asi mismo como HEAD, son etiquetas que apuntan a un nodo. 
+
+Rebase se usa para conservar los commits de la branch a rebasar, en lugar de merge que crea un nuevo nodo y se puede borrar la otra branch, rebase trae todos los commits de la branch y los pone como subsiguientes en la otra rama correspondiente.
+
+---------
+
+En el protocolo HTTP hay 3 formas escenciales de mandar informacion desde el navegador a el webserver:
+1) Una de ellas es como parte de la URL: GET. 'server.com/user/get/22'. De todas maneras, no es portadora de gran volumen de datos. Es una de las partes mas importantes del header.
+2) Si la información viaja a traves del BODY, es POST.
+
+
+Tanto SOAP como RESTFULL son WEB-services.
+
+RESTFULL combina la misma expresion URL con distintos Metodos para obtener un CRUD
+
+POST(alta/create)   /api/v3/usuarios        {informacion en el body}
+GET(getById)        /api/v3/usuarios/32
+PUT(update)         /api/v3/usuarios/32
+GET(retrieve)       /api/v3/usuarios
+POST                /api/v3/usuarios/buscar {informacion en el body}
