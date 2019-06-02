@@ -29,3 +29,30 @@ GET(getById)        /api/v3/usuarios/32
 PUT(update)         /api/v3/usuarios/32
 GET(retrieve)       /api/v3/usuarios
 POST                /api/v3/usuarios/buscar {informacion en el body}
+
+
+La funcion de balanceador que cumple NGINX que barre las peticiones y delega la que corresponde al servidor apache correspondiente, es la funcion de PROXY INVERSO
+
+----------
+
+ANGULAR
+
+El modulo con el que arranca la aplicacion se mantenga lo mas pequeño posible, para que la app pueda cargarse lo antes posible.
+
+PEdro era el titular de la materia hasta hace 1 o 2 cursadas, que Mateo llego y le arrebato el poder. Ahora está ahí, haciendo bulto. Sobre todo por su enemistad ya que Pedro enarbola la bandera de PHP.
+
+Componente: CONTROLLER
+
+Interpolacion de datos ({{title}})
+
+Para declarar que el atributo de una clase en TS puede NO ser mandatorio, se pone con un ? al final. EJ:
+
+export class Hero {
+    id: number;
+    name?: string;
+}
+
+[] para setear propiedades al DOM ELEMENT
+() para propagar eventos
+
+routerLink <-- Palabra reservada de Angular, le dice a la aplicación que es ANGULAR el que tiene que navgar, en lugar de la propiedad HREF que le dice al NAVEGADOR que es el responsable de hacer la navegacion.
