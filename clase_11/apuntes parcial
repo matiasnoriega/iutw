@@ -1,0 +1,41 @@
+T1.1
+Tim Bernard Lee PUNTO 1
+- dominio
+- html
+- http
+- navegador
+T1.2
+- En el navegador cambia su rol gracias a que la comunidad lo reconoce como un excelente entorno de ejecucion de aplicaciones
+- El cloud no hubiera despegaod si no hubiera existido la solucion del cliente. Telefonos y computadoras usando una aplicacion común a traves de distintos sistemas operativos.
+
+T2
+- El intercambio, o la forma de codificar los datos, se hace via JSON.
+- La URL es la forma de construir el query.
+- Aprovecha el protocolo HTTP para que el query sea mas expresivo utilizando distintos metodos (POST, GET, PUT, DELETE
+
+T3
+SELECTORES: Identificar objetos en el DOM, por ejemplo, para que el CSS sepa darle estilos a los elementos del DOM de determinada clase
+
+CSS: Es una manera de dar estilos en forma de cascada a traves de arbol DOM. A 2 selectores que apuntan al mismo objeto gana el más especifico (selector<clase<id), y en el caso de que sean iguales, el último que se declaró, ya que pisa el valor.
+
+JS FUNCIONAL: Tiene la virtud de se run lenguaje de objetos y también un es un lenguaje funcional. Todo es un objeto en JS, y se dice que es funcional ya que puede tratar a las funciones como objetos (Se pueden pasar como argumentos, pueden asigfnarse a variables, pueden ser el retorno de otra funcion). Para que sea funcional, hay que apunta ra las funciones PURAS.
+
+Las funcionas son PURAS cuando dados los mismos argumentos devuelve los mismos resultados, y no utiliza ni modifica ningúna variable por fuera de la funcion misma.
+
+CLOSURE: Las clases son una forma de encapsular. Para diferenciar en JS que es lo privado y lo publico de la clase, se usa closure. Es fundamental que sea una funcion CONSTRUCTORA, que va a devolver un objeto (array, objeto, funcion, etc); este objeto retornado va a contener la parte closureada
+
+FUNCIONES ASINCRONICAS: Explicar por qué
+
+PHP Lineamientos
+
+T4.x
+COMPONENTE: Se usa la palabra en dos niveles de abstraccion distintos. Pero se refiere al componente que engloba el template(html), css y el componente(ts).
+
+TEMPLATE: El component es una directiva con un template. Las variables se pasan del componente al template INTERPOLANDO datos, con doble llave, ej:
+
+<h1>{{usuario.nombre}}</h1>
+
+Para que los datos viajen del template al componente, se transmiten a traves de EVENTOS. El sistema de interpolacion lo maneja Angular.
+
+TP
+No necesariamente mostrar tabla 
